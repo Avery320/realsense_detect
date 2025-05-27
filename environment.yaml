@@ -1,0 +1,12 @@
+name: realsense_dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - opencv
+  - pip
+  - pyrealsense2  # 直接從 conda-forge 安裝
+  - pip:
+    - roslibpy  # 使用 pip 安裝 roslibpy
+    - rospkg    # 用於支援 ROS 訊息包
